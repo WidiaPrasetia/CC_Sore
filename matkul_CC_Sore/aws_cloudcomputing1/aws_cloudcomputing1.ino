@@ -42,7 +42,7 @@ void setup() {
    Serial.println("Connected");
    IOT.subscribe("/topic");
    IOT.subscribe("/sensor/+");
-   IOT.subscribe("/sensor/test");
+   IOT.subscribe("/sensor/testing");
 }
 
 unsigned long TERAKHIR_DIKIRIM = 0;
