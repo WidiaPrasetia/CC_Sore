@@ -36,7 +36,7 @@ void setup() {
   IOT.onMessage(cloud_incoming);
 
   int retries = 0;
-  while (!IOT.connect("Prita") && retries < 5) {
+  while (!IOT.connect("Pras-Things") && retries < 5) {
     Serial.println(".");
     delay(100);
     retries++;
@@ -86,7 +86,7 @@ void loop() {
     }
     else
     {
-      IOT.publish("/topic/Prita", jsonBuffer );
+      IOT.publish("/topic/espPras", jsonBuffer );
     }
 
     TERAKHIR_DIKIRIM = SEKARANG;
