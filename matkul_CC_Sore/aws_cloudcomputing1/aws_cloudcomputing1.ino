@@ -68,6 +68,7 @@ void loop() {
     waktu = String(timeinfo.tm_year + 1900) + "-" + String(timeinfo.tm_mon) + "-" + String(timeinfo.tm_mday) + "  "
     + String(timeinfo.tm_hour) + ":" + String(timeinfo.tm_min) + ":" + String (timeinfo.tm_sec);
     Serial.println(waktu);
+    Serial.println(heap_caps_get_free_size(MALLOC_CAP_8BIT));
     
     doc["id"] = waktu;
     doc["free_heap"] = heap_caps_get_free_size(MALLOC_CAP_8BIT);
