@@ -1,5 +1,5 @@
-const char* ssid = "Jakanet";
-const char* pass = "cicinghutan";
+const char* ssid = "DoIT";
+const char* pass = "Doit2019%";
 const char* endpoint = "a1u2xyk7b79mu1-ats.iot.ap-southeast-1.amazonaws.com";
 
 // Amazon Root CA 1
